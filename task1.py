@@ -25,3 +25,9 @@ example:
 Enter number:4
 4 8 12 16 20 24 28 32 36 40 44 48
 """
+print('I will print the multiplication \ntable of any integer.')
+x=int(input('Enter an integer==>'))
+for i in range(1,13):
+    print(x*i, end=' ')
+else:
+    print('\ndone')

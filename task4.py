@@ -23,3 +23,16 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+close=0
+n=int(input('How many months will I track my expenses'))
+for i in range(1,n+1):
+    purch=float(input(f'Enter total purchases for month({i})=>'))
+    pay=float(input(f'Enter total purchases for month({i})=>'))
+    purch=purch+close
+    interest=(purch-pay)*0.02
+    interest=round(interest,2)
+    close=interest+purch-pay
+    print('interest =', interest)
+    close=round(close,2)
+    print(f'Your closing balance is ${close}')
+
