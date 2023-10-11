@@ -25,6 +25,6 @@ enter a number:4
 h = int(input('Enter the height of the box=>'))
 w = int(input('Enter the width of the box=>'))
 for a in range(h):
-    print('')
     for b in range(w):
         print('*',end='')
+    print('')

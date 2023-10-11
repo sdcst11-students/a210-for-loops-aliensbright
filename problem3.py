@@ -17,3 +17,10 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+total=0
+x=1
+n=int(input('Enter an integer=>'))
+for i in range(1,n+1):
+    total=total+x
+    x=10*x+1
+print(total)
